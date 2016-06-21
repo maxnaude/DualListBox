@@ -58,7 +58,7 @@
                 if (item === undefined || item === null) { throw 'DualListBox: ' + i + ' is undefined.'; }
             });
 
-            options['parent'] = 'dual-list-box-' + options.title;
+            options['parent'] = 'dual-list-box-' + options.title.split(' ').join('-');
             options['parentElement'] = '#' + options.parent;
 
             selected = $.extend([{}], selected);
